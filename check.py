@@ -12,6 +12,6 @@ with open('reference.properties') as f:
 			name, value = line.split(separator, 1)
 			key1.append(name)
 if len(set(key).intersection(key1))==len(key):
-	print("matches")
+	print(1)
 else:
-	print("dosent match")
+	print(0)
