@@ -19,7 +19,6 @@ with open('reference.properties') as f:
 if len(set(key).intersection(set(key1)))==len(set(key)):
 	print("matches")
 else:
-	print("dosent match")
 	sys.exit(-1)
 os.system('rm service.properties');
 os.system('rm reference.properties')
