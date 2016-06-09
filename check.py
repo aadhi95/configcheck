@@ -17,7 +17,7 @@ with open('reference.properties') as f:
 			key1.append(name)
 
 if len(set(key).intersection(set(key1)))==len(set(key)):
-	sys.exit(1)
+	print("matches")
 else:
 	print("dosent match")
 	sys.exit(-1)
