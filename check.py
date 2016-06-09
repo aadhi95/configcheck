@@ -1,4 +1,5 @@
 import os
+import sys
 separator = "="
 key = []
 key1 = []
@@ -16,8 +17,9 @@ with open('reference.properties') as f:
 			key1.append(name)
 
 if len(set(key).intersection(set(key1)))==len(set(key)):
-	print("matches")
+	sys.exit(1)
 else:
 	print("dosent match")
+	sys.exit(-1)
 os.system('rm service.properties');
 os.system('rm reference.properties')
